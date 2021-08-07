@@ -19,17 +19,11 @@ function loadLaunches() {
   // Load launches and sort by flight number.
 }
 
-function loadPlanets() {
-  // TODO: Once API is ready.
+async function loadPlanets() {
   const planetSelector = document.getElementById("planets-selector");
-  const planets = [
-    {
-      kepler_name: 'Boonka Kah',
-    },
-    {
-      kepler_name: 'Histaya Z'
-    }
-  ];
+  const response = await fetch('/planets');
+  const planets = await response.json();
+
   planets.forEach((planet) => {
     planetSelector.innerHTML += `<option value="${planet.kepler_name}">${planet.kepler_name}</option>`;
   });
