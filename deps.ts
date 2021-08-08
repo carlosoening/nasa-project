@@ -4,7 +4,7 @@ export { join } from 'https://deno.land/std@0.102.0/path/mod.ts';
 export { BufReader } from 'https://deno.land/std@0.102.0/io/bufio.ts';
 export { parse } from 'https://deno.land/std@0.102.0/encoding/csv.ts';
 
-// Third party dependencies
+// Third party library dependencies
 export { 
     Router, 
     Status, 
