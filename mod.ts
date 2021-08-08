@@ -52,7 +52,8 @@ app.use(async (ctx) => {
         "/index.html",
         "/images/favicon.png",
         "/javascripts/script.js",
-        "/stylesheets/style.css"
+        "/stylesheets/style.css",
+        // "/videos/space.mp4",
     ];
     if (fileWhitelist.includes(filePath)) {
         await send(ctx, filePath, { 
