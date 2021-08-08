@@ -1,6 +1,6 @@
 import { Application, send } from './deps.ts';
 import { log } from './deps.ts';
-import api from './api.ts';
+import api from './api/api.ts';
 
 const app = new Application();
 const PORT = 8000;

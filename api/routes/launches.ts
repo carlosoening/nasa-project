@@ -1,6 +1,6 @@
-import { Router, Status } from '../deps.ts';
-import { log } from '../deps.ts';
-import * as launches from '../models/launches.ts';
+import { Router, Status } from '../../deps.ts';
+import { log } from '../../deps.ts';
+import * as launches from '../../models/launches.ts';
 
 const router = new Router();
 

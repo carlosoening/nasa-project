@@ -1,4 +1,4 @@
-import { Router } from './deps.ts';
+import { Router } from '../deps.ts';
 import launches from './routes/launches.ts';
 import planets from './routes/planets.ts';
 
